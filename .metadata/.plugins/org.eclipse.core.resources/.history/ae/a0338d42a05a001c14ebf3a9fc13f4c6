@@ -1,0 +1,28 @@
+package com.ejemplo.servicio.usuariosmembresias.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ejemplo.servicio.usuariosmembresias.models.Usuario_Membresia;
+import com.ejemplo.servicio.usuariosmembresias.service.UsuarioMembresiaService;
+
+@RestController
+public class UsuarioMembresiaController {
+
+	@Autowired
+	private UsuarioMembresiaService service;
+	
+	public List<Usuario_Membresia> listar() {
+		return service.listar();
+	}
+	
+	public Usuario_Membresia guardar(@RequestBody Usuario_Membresia u) {
+		return service.guardar(u);
+	}
+	
+	public void eliminar(@PathVariable Integer id) {
+		service.eliminar(id);
+	}
+}

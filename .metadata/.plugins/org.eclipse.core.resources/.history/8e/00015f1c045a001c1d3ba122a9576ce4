@@ -1,0 +1,20 @@
+package com.ejemplo.servicio.relacion.sedecurso.models;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="cursos_x_sedes")
+public class Sede_Curso {
+
+	@ManyToOne
+	@JoinColumn(name="curso_id")
+	private Curso curso;
+	
+	@ManyToOne
+	@JoinColumn(name="sede_id")
+	private Sede sede;
+	
+}

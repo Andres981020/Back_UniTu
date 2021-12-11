@@ -1,0 +1,30 @@
+package com.ejemplo.servicio.membresias.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ejemplo.servicio.membresias.models.Membresia;
+import com.ejemplo.servicio.membresias.service.MembresiaService;
+
+@RestController
+public class MembresiaController {
+
+	@Autowired
+	private MembresiaService service;
+	
+	public List<Membresia> listar() {
+		return service.listar();
+	}
+	
+	public Membresia listarPorId(@PathVariable Integer id) {
+		return service.listarPorId(id);
+	}
+	
+	public Membresia guardar(@RequestBody Membresia m) {
+		return service.guardar(m);
+	}
+}

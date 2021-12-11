@@ -1,0 +1,13 @@
+package com.ejemplo.servicio.commons.rol;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ServicioRolCommonsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ServicioRolCommonsApplication.class, args);
+	}
+
+}

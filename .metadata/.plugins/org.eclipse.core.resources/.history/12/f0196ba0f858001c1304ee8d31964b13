@@ -1,0 +1,47 @@
+package com.ejemplo.servicio.rol.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ejemplo.servicio.rol.models.Rol;
+import com.ejemplo.servicio.rol.service.RolService;
+
+@RestController
+public class RolController {
+
+	@Autowired
+	private RolService service;
+	
+	@GetMapping("")
+	public String mostrar() {
+		return "hola mundo";
+	}
+	
+	@GetMapping("/roles")
+	public List<Rol> listar(){
+		return service.listar();
+	}
+	
+	@PostMapping("/roles/guardar-rol")
+	public Rol guardar(@RequestBody Rol rol) {
+		return service.guardar(rol);
+	}
+	
+	@GetMapping("/roles/{id}")
+	public Rol listarPorId(@PathVariable Integer id) {
+		return service.listarPorId(id);
+	}
+	/*
+	@PutMapping("/roles/actualizar-rol/{id}")
+	public Rol actualizar(@RequestParam Integer id) {
+		
+	}*/
+}

@@ -1,0 +1,5 @@
+package com.ejemplo.sedes.service;
+
+public interface SedeService {
+
+}

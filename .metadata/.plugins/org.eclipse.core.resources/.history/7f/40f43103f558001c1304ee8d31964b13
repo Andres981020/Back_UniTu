@@ -1,0 +1,13 @@
+package com.ejemplo.servicio.rol.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ejemplo.servicio.rol.service.RolService;
+
+@RestController
+public class RolController {
+
+	@Autowired
+	private RolService service;
+}

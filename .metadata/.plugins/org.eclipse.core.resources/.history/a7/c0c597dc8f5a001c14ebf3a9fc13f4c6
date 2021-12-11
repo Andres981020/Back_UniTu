@@ -1,0 +1,28 @@
+package com.ejemplo.servicio.cursogrupo.controller;
+
+import java.util.List;
+
+import com.ejemplo.servicio.cursogrupo.models.Curso_Grupo;
+import com.ejemplo.servicio.cursogrupo.service.CursoGrupoService;
+
+public class CursoGrupoController implements CursoGrupoService {
+
+	@Override
+	public List<Curso_Grupo> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Curso_Grupo guardar(Curso_Grupo c) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void eliminar(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

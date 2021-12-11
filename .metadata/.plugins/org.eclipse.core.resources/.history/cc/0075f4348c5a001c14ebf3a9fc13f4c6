@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.cursogrupo.models;
+
+public class Curso_Grupo {
+
+}

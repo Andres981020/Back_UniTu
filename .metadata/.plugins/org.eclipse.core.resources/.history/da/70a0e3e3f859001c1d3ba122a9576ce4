@@ -1,0 +1,5 @@
+package com.ejemplo.cursos.models;
+
+public class Curso {
+
+}

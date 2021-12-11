@@ -1,0 +1,5 @@
+package com.ejemplo.cursos.service;
+
+public interface CursoService {
+
+}

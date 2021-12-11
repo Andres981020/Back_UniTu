@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.membresias.serviceImpl;
+
+public class MembresiaServiceImpl {
+
+}

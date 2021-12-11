@@ -1,0 +1,40 @@
+package com.ejemplo.servicio.usuariosmembresias.models;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="usuario_x_membresia")
+public class Usuario_Membresia {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	private Integer estado;
+	
+	@Column(name="id_membresia_obtenida")
+	private Integer id_membresia;
+	@Column(name="id_usuario_obtenido")
+	private Integer id_usuario;
+	
+	private Date fecha_compra;
+	private Date fecha_activacion;
+	
+	@ManyToOne
+	@JoinColumn(name="id_usuario")
+	private Usuario usuario;
+	
+	@ManyToOne
+	@JoinColumn(name="id_membresia")
+	private Membresia membresia;
+	
+}

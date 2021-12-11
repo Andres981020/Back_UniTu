@@ -1,0 +1,31 @@
+package com.ejemplo.cursos.models;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="cursos")
+public class Curso {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	private Integer estado;
+	private Integer creditos_curso;
+	private Integer categoria_curso;
+	
+	@Column(length=45)
+	private String codigo_curso;
+	
+	@Column(length=100)
+	private String nombre_curso;
+	
+	@Column(length=255)
+	private String descripcion_curso;
+	
+}

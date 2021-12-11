@@ -1,0 +1,9 @@
+package com.ejemplo.servicio.rol.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.ejemplo.servicio.rol.models.Rol;
+
+public interface IRolRepository extends CrudRepository<Rol, Integer> {
+
+}

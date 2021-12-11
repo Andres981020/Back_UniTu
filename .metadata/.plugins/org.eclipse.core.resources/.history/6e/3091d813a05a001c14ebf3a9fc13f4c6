@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.usuariosmembresias.controller;
+
+public class UsuarioMembresiaController {
+
+}

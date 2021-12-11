@@ -1,0 +1,27 @@
+package com.ejemplo.sedes.models;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="sedes")
+public class Sede {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	private Integer estado;
+	
+	@Column(length=250)
+	private String nombre_sede;
+	
+	private Double latitud;
+	private Double longitud;
+	private Integer id_ciudad;
+
+}

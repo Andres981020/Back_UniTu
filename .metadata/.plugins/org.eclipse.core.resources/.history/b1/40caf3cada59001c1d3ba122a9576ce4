@@ -1,0 +1,5 @@
+package com.ejemplo.sedes.models;
+
+public class Sede {
+
+}

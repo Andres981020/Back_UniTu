@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ejemplo.servicio.rol.service{RolService.java[RolService" modifiers="513" timestamp="1639066619925"/>
+    <typeInfo handle="=servicio-sedes/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ejemplo.sedes.repository{ISedeRepository.java[ISedeRepository" modifiers="513" timestamp="1639164202296"/>
+    <typeInfo handle="=servicio-sede-curso/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ejemplo.servicio.relacion.sedecursos.service{Sede_CursoService.java[Sede_CursoService" modifiers="513" timestamp="1639177052984"/>
+    <typeInfo handle="=servicio-curso-grupo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ejemplo.servicio.cursogrupo.service{CursoGrupoService.java[CursoGrupoService" modifiers="513" timestamp="1639232970785"/>
+</typeInfoHistroy>

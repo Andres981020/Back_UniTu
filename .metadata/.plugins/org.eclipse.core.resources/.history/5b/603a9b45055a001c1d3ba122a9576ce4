@@ -1,0 +1,22 @@
+package com.ejemplo.servicio.relacion.sedecurso.serviceImpl;
+
+import java.util.List;
+
+import com.ejemplo.servicio.relacion.sedecurso.models.Sede_Curso;
+import com.ejemplo.servicio.relacion.sedecursos.service.Sede_CursoService;
+
+public class Sede_CursoServiceImpl implements Sede_CursoService {
+
+	@Override
+	public List<Sede_Curso> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Sede_Curso guardar(Sede_Curso rel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

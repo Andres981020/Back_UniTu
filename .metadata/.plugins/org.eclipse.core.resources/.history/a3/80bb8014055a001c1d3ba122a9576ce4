@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.relacion.sedecursos.service;
+
+public interface Sede_CursoService {
+
+}

@@ -1,0 +1,13 @@
+package com.ejemplo.servicio.commons.usuario;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ServicioUsuarioCommonsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ServicioUsuarioCommonsApplication.class, args);
+	}
+
+}

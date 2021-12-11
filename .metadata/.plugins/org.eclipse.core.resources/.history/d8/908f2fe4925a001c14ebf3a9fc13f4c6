@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.membresias.service;
+
+public interface MembresiaService {
+
+}

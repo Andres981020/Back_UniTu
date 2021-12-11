@@ -1,0 +1,5 @@
+package com.ejemplo.sedes.repository;
+
+public interface ISedeRepository {
+
+}

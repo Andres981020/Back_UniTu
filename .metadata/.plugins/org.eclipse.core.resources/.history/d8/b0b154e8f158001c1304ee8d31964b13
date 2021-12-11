@@ -1,0 +1,34 @@
+package com.ejemplo.servicio.rol.serviceImpl;
+
+import java.util.List;
+
+import com.ejemplo.servicio.rol.models.Rol;
+import com.ejemplo.servicio.rol.service.RolService;
+
+public class RolServiceImpl implements RolService {
+
+	@Override
+	public List<Rol> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Rol listarPorIdRol(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Rol guardar(Rol rol) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void eliminar(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

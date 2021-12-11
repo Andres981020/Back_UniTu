@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.usuariosmembresias.repository;
+
+public interface IUsuarioMembresiaRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.ejemplo.servicio.relacion.sedecurso.repository;
+
+public interface ISedesCursosRepository {
+
+}
